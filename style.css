@@ -112,7 +112,7 @@ header {
 /* Adaptabilidad para tablets */
 @media (min-width: 576px) {
     .ingreso-texto textarea {
-        height: 400px;
+        height: 450px;
     }
     .botones {
         flex-direction: row;
