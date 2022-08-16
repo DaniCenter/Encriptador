@@ -5,7 +5,62 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Encriptador</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="normalize.css" />
     </head>
-    <body></body>
+    <body>
+        <header>
+            <div class="container logo">
+                <img src="img/Vector.svg" alt="Vector" />
+            </div>
+        </header>
+        <main>
+            <div class="container ingreso-texto">
+                <textarea
+                    cols="30"
+                    rows="10"
+                    placeholder="Ingrese su texto aqui"
+                ></textarea>
+            </div>
+            <div class="container advertencia">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-alert-triangle"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="#9e9e9e"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 9v2m0 4v.01" />
+                    <path
+                        d="M5 19h14a2 2 0 0 0 1.84 -2.75l-7.1 -12.25a2 2 0 0 0 -3.5 0l-7.1 12.25a2 2 0 0 0 1.75 2.75"
+                    />
+                </svg>
+                <p>Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="container botones">
+                <input type="button" value="Encriptar" />
+                <input type="button" value="Desencriptar" />
+            </div>
+            <div class="container">
+                <div class="texto-Resultado">
+                    <p id="resultado">
+                        <span>Nigún mensaje fue encontrado</span><br /><br />
+                        Ingresa el texto que desees encriptar o desencriptar
+                    </p>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>

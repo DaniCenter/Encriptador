@@ -1,3 +1,107 @@
-boyd {
-    background-color: #f3f5fc;
+:root {
+    --Fuente-principal: "Inter", sans-serif;
+}
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: #e5e5e5;
+    overflow-x: hidden;
+}
+header {
+    width: 100%;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+/* Header */
+.logo {
+    padding: 26px 0;
+}
+/* Ingreso de texto */
+.ingreso-texto {
+    width: 95%;
+    margin: 50px auto;
+}
+.ingreso-texto textarea {
+    height: 300px;
+    width: 100%;
+    color: #0a3871;
+    font-family: var(--Fuente-principal);
+    font-size: 32px;
+    border: none;
+    max-height: 700px;
+    padding: 10px;
+    background-color: transparent;
+}
+.ingreso-texto textarea::placeholder {
+    color: #0a3871;
+    font-family: var(--Fuente-principal);
+    font-size: 32px;
+}
+/* Advertencia */
+.advertencia {
+    display: flex;
+    color: #495057;
+    gap: 5px;
+    font-size: 12px;
+    font-family: var(--Fuente-principal);
+    align-items: center;
+    margin: 10px auto;
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.botones input {
+    padding: 25px 0;
+    cursor: pointer;
+    border-radius: 24px;
+    border: none;
+    background-color: #0a3871;
+    color: white;
+    font-family: var(--Fuente-principal);
+    font-size: 16px;
+}
+.botones input:last-child {
+    color: #0a3871;
+    background-color: transparent;
+    border: solid 2px;
+    border-color: #0a3871;
+}
+
+/* Texto Resultado */
+.texto-Resultado {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    box-shadow: 1px 0px 9px 2px rgba(0, 0, 0, 0.27);
+    -webkit-box-shadow: 1px 0px 9px 2px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 1px 0px 9px 2px rgba(0, 0, 0, 0.27);
+    background-color: #ffffff;
+    border-radius: 32px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.texto-Resultado p {
+    text-align: center;
+    font-family: var(--Fuente-principal);
+    padding: 30px;
+    font-size: 16px;
+    color: #495057;
+}
+.texto-Resultado p span {
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
 }
