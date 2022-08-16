@@ -112,7 +112,7 @@ header {
 /* Adaptabilidad para tablets */
 @media (min-width: 576px) {
     .ingreso-texto textarea {
-        height: 500px;
+        height: 400px;
     }
     .botones {
         flex-direction: row;
@@ -128,20 +128,18 @@ header {
     html,
     body {
         height: 100%;
-        overflow-y: hidden;
     }
     header {
         position: absolute;
     }
     .modoDesktop {
-        margin: 24px auto;
+        margin-top: 24px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
     .modoDesktop main {
         grid-column: 1/3;
         grid-row: 1/2;
-        margin-bottom: 5%;
     }
     .modoDesktop footer {
         justify-self: stretch;
@@ -163,13 +161,11 @@ header {
         width: 100%;
     }
     .resultadoDesktop {
-        height: 94%;
+        height: 105%;
     }
     .ingreso-texto {
         margin: 82px auto;
-    }
-    .botones {
-        margin-bottom: 50px;
+        margin-bottom: 0;
     }
     .ocultar {
         display: block;
