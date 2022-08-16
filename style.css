@@ -56,7 +56,6 @@ header {
     align-items: center;
     margin: 10px auto;
 }
-
 /* Botones */
 .botones {
     display: flex;
@@ -104,4 +103,18 @@ header {
     color: black;
     font-weight: 700;
     font-size: 24px;
+}
+
+/* Adaptabilidad para tablets */
+@media (min-width: 576px) {
+    .ingreso-texto textarea {
+        height: 500px;
+    }
+    .botones {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .botones input {
+        width: 100%;
+    }
 }
