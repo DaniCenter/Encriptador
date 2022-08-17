@@ -1,6 +1,7 @@
 // Variables
 let textarea = document.querySelector("#texoingresado");
 let botonEncriptar = document.querySelector("#encriptar");
+let botonDesencriptar = document.querySelector("#desencriptar");
 let resultado = document.querySelector("#resultado");
 // Evento encriptar
 botonEncriptar.addEventListener("click", () => {
@@ -32,4 +33,15 @@ botonEncriptar.addEventListener("click", () => {
         alert("ESCRIBE HDP");
         window.location.reload();
     }
+});
+
+// Evento desencriptar
+botonDesencriptar.addEventListener("click", () => {
+    let mensaje = textarea.value;
+    mensaje = mensaje.replace(/ai/g, "a");
+    mensaje = mensaje.replace(/enter/g, "e");
+    mensaje = mensaje.replace(/imes/g, "i");
+    mensaje = mensaje.replace(/ober/g, "o");
+    mensaje = mensaje.replace(/ufat/g, "u");
+    resultado.textContent = mensaje;
 });
