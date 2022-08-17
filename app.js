@@ -32,6 +32,7 @@ botonEncriptar.addEventListener("click", () => {
         resultado.textContent = arrayString;
         resultado.className = "agregadoEncript";
         copiar.style.display = "initial";
+        resultado.style.textAlign = "initial";
     }
 });
 
@@ -48,3 +49,8 @@ botonDesencriptar.addEventListener("click", () => {
     resultado.className = "agregadoEncript";
     copiar.style.display = "initial";
 });
+
+// Evento copiar
+function copiarTexto() {
+    navigator.clipboard.writeText(resultado.textContent);
+}
