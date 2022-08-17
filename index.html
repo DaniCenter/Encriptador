@@ -23,7 +23,10 @@
         <div class="container modoDesktop">
             <main>
                 <div class="container ingreso-texto">
-                    <textarea placeholder="Ingrese su texto aqui"></textarea>
+                    <textarea
+                        placeholder="Ingrese su texto aqui"
+                        id="texoingresado"
+                    ></textarea>
                 </div>
                 <div class="container advertencia">
                     <svg
@@ -47,7 +50,7 @@
                     <p>Solo letras minusculas y sin acentos</p>
                 </div>
                 <div class="container botones">
-                    <input type="button" value="Encriptar" />
+                    <input type="button" value="Encriptar" id="encriptar" />
                     <input type="button" value="Desencriptar" />
                 </div>
             </main>
@@ -68,5 +71,7 @@
                 </div>
             </footer>
         </div>
+
+        <script src="app.js"></script>
     </body>
 </html>
