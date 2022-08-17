@@ -3,6 +3,7 @@ let textarea = document.querySelector("#texoingresado");
 let botonEncriptar = document.querySelector("#encriptar");
 let botonDesencriptar = document.querySelector("#desencriptar");
 let resultado = document.querySelector("#resultado");
+let copiar = document.querySelector("#copiar");
 // Evento encriptar
 botonEncriptar.addEventListener("click", () => {
     let mensaje = textarea.value;
@@ -29,9 +30,8 @@ botonEncriptar.addEventListener("click", () => {
         });
         let arrayString = arrayMensaje.toString().replace(/,/g, "");
         resultado.textContent = arrayString;
-    } else {
-        alert("ESCRIBE HDP");
-        window.location.reload();
+        resultado.className = "agregadoEncript";
+        copiar.style.display = "initial";
     }
 });
 
@@ -44,4 +44,7 @@ botonDesencriptar.addEventListener("click", () => {
     mensaje = mensaje.replace(/ober/g, "o");
     mensaje = mensaje.replace(/ufat/g, "u");
     resultado.textContent = mensaje;
+    resultado.textContent = arrayString;
+    resultado.className = "agregadoEncript";
+    copiar.style.display = "initial";
 });

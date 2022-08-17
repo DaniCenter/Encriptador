@@ -16,6 +16,7 @@ body {
 }
 header {
     width: 100%;
+    z-index: -10;
 }
 .container {
     width: 90%;
@@ -83,7 +84,7 @@ header {
 /* Texto Resultado */
 .texto-Resultado {
     padding: 10px;
-    width: 100%;
+    max-width: 500px;
     border: none;
     box-shadow: 1px 0px 9px 2px rgba(0, 0, 0, 0.27);
     -webkit-box-shadow: 1px 0px 9px 2px rgba(0, 0, 0, 0.27);
@@ -148,6 +149,8 @@ header {
         margin: 0;
         padding: 0;
         height: 100%;
+        display: flex;
+        flex-direction: column;
     }
     .texto-Resultado p {
         height: 100%;
@@ -170,4 +173,36 @@ header {
     .ocultar {
         display: block;
     }
+}
+
+/* Boton copiar */
+.botonCopiar {
+    padding: 25px 0;
+    cursor: pointer;
+    border-radius: 24px;
+    border: solid;
+    background-color: transparent;
+    color: #0a3871;
+    font-family: var(--Fuente-principal);
+    font-size: 16px;
+    transition: ease-in 0.2s;
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: none;
+}
+.botonCopiar:hover {
+    background-color: #0a3871;
+    color: white;
+}
+/* Estilos con JS */
+.agregadoEncript {
+    font-size: 24px !important;
+    max-width: 100% !important;
+    justify-content: start !important;
+    text-align: initial !important;
+    word-wrap: break-word !important;
+}
+.mostrarCopiar {
+    display: initial !important;
 }
